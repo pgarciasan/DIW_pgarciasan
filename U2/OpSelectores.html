@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 3</title>
+    <style type="text/css">
+        aside {
+            float: right;
+            width: 33%;
+            text-align: center;
+        }
+
+        [size] {
+            font-weight: bold;
+            color: red;
+        }
+
+        #Contacto p::after {
+            content: "___Remember me as a hero";
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+
+        article p::first-line {
+            font-style: oblique;
+        }
+
+        footer p:last-child {
+            font-weight: bold;
+            background-color: black;
+            color: white;
+            font-size: 18pt;
+            text-transform: uppercase;
+            font-family: monospace;
+        }
+
+        section:empty {
+            width: 100%;
+            height: 20px;
+            background: black;
+        }
+
+        p:first-of-type {
+            font-weight: bold;
+            font-family: Calibri;
+            color: green;
+        }
+
+         :target {
+            background-color: grey;
+        }
+
+        article h3::first-letter {
+            font-size: 200%;
+            background-color: black;
+            color: white;
+        }
+
+        article p:only-of-type {
+            font-size: 10pt;
+            color: blue;
+        }
+
+         ::selection {
+            color: white;
+            background: red;
+        }
+
+         :not(p) {
+            font-family: Garamond;
+        }
+
+        h2~p {
+            background: #0f0890;
+        }
+
+        article h3+p::before {
+            content: "Cuidado aquí ";
+            color: grey;
+        }
+
+        article.testo p:nth-last-child(4) {
+            text-transform: uppercase;
+        }
+
+        a:link {
+            color: yellow;
+        }
+
+        a:visited {
+            color: orange;
+        }
+
+        a:hover {
+            background-color: blue;
+        }
+
+        a:first-child {
+            color: brown;
+        }
+
+        [size~="2"] {
+            border: 4px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Terminal A71</h1>
+    </header>
+    <section></section>
+    <nav>
+        <a href="#Inicio">Inicio</a><br>
+        <a href="#Sobre nosotros">Sobre nosotros</a><br>
+        <a href="#Contacto">Contacto</a><br>
+    </nav>
+    <aside>
+        <blockquote>
+            <figure><img src="img/sands.jpg" width="300px" hight="400px" align="center" /><br clear="all"></figure>
+            <font size="2">El que me siga no andará en tinieblas sino que tendrá luz eterna</font>
+        </blockquote>
+    </aside>
+    <section></section>
+    <article>
+        <h3 id="Inicio">Entry 4479</h3>
+        <p>
+            El ímpetu de la pasión lleva a la propia ruina <br> ........... .............. ...........<br> .... ... ... .........<br> .......
+            <br> ..... ..... .... ....<br> ........ .... .... .... ....
+        </p>
+    </article>
+    <article class="testo">
+        <h3 id="Sobre nosotros">Sobre nosotros</h3>
+        <p>We are a very mindful people. Stop.</p>
+        <p> Our company have several interests. Stop.</p>
+        <p> You are not us. Stop.</p>
+        <p> We are not you. Stop.</p>
+        <p> Down the sands you must start your search. Stop.</p>
+        <p> Long ago an ancient evil was here. Stop.</p>
+        <p> Down, down, down in the sands. Stop.</p>
+        <p> Other people came before us. Stop.</p>
+        <p> We found their records. Stop.</p>
+        <p> But the information is incomplete. Stop.</p>
+        <p> we have fix same devices. Stop.</p>
+        <p> Other are not avalaible anymore. Stop.</p>
+        <p> I madea copy of which we found. Stop.</p>
+        <p> In the HQ there is. Stop.</p>
+        <p> But now I am thinking. Stop.</p>
+        <p>I have found some conclusions. Stop.</p>
+        <p> It's not that we thougt at the beginning. Stop.</p>
+    </article>
+    <section></section>
+    <section id="Contacto">
+        <h2>Technomechanical Research&Co</h2>
+        <p>
+            La información que había ha sido borrada.
+        </p>
+    </section>
+    <footer>
+        <hr>
+        <p>
+            Truculún no conoce la duda. Truculín no la tolera.
+        </p>
+        <p>
+            I come to the call of the Dark Powers
+        </p>
+    </footer>
+</body>
+
+</html>
