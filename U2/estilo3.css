@@ -1,0 +1,30 @@
+{
+    font-family: Verdana;
+    color: darkblue;
+    font-size-adjust: 0.9;
+    line-height: 1.4em;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px border: 1px solid black;
+    border-radius: 1px;
+    text-shadow: 1px 2px darkgrey;
+    max-width: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+p {
+    text-indent: 1cm;
+}
+
+a:link, a:active, a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkgreen;
+}
