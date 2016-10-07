@@ -1,0 +1,19 @@
+table, tr , td{
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+tr:nth-child(even){
+  background-color: lightgrey;
+}
+
+caption {
+    caption-side: bottom;
+      text-align:left;
+      font-style: italic;
+}
+
+td{
+  padding-left: 10px;
+  padding-right: 10px;
