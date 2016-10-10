@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+          <legend>Inscipción</legend>
+            <fieldset>
+                <legend>Información personal:</legend>
+                Nombre*: <input type="text"><br> Apellidos*: <input type="text"><br> Email*: <input type="text"> Sexo <input type="radio" name="gender" value="male" checked> Hombre
+                <input type="radio" name="gender" value="female"> Mujer Fecha nacimiento*: <input type="date" name="bday" max="1979-12-31"><br> Provincia:
+                <select name="Provincia">
+                    <option value="1">Castelló</option>
+                    <option value="2">València</option>
+                    <option value="3">Alacant</option>
+                </select>
+                 Población: <input type="text"><br> Teléfono: <input type="text"><br> Motivo inscripción:
+                <textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea> Escoge el color de tu avatar: <input type="color" name="favcolor" value="black">
+            </fieldset>
+            <fieldset>
+              <legend>Creación de usuario:</legend>
+              Nombre de usuario*: <input type="text"><br>
+              Contraseña: <input type="password"><br>
+              Repite contraseña: <input type="password"><br>
+            </fieldset>
+            <input name="casilla1" type="checkbox" />Deseo recibir copias de los mensajes del foro en mi correo electrónico<br>
+            <input name="casilla2" type="checkbox" />Deseo recibir notifiación de próximos eventos en mi correo electrónico<br>
+            <input type="submit" value="Confirmar registro">
+            <fieldset>
+              Nota: los campos marcados con "*" son obligatorios
+            </fieldset>
+        </fieldset>
+    </form>
+</body>
+
+</html>
