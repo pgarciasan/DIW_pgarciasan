@@ -1,0 +1,202 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    width: 100%;
+    background-color: lightblue;
+}
+
+body {
+    height: 1024px;
+    text-align: center;
+}
+
+#container {
+    display: table;
+    width: 768px;
+    margin: 15px;
+    text-align: left;
+}
+
+#cabecera {
+    background: lightblue;
+    border: 1px solid lightgrey;
+    padding: 20px;
+}
+
+#menu {
+    background: #CCCCCC;
+    padding: 5px 15px;
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu ul li.menu {
+    float: left;
+    width: 100px;
+}
+
+#menu ul li {
+    float: left;
+}
+
+#menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background-color: lightblue;
+    border: solid 1px #fff;
+    padding: 8px;
+    position: relative;
+}
+
+#menu ul li a:hover, #menu ul li:hover a.nivel1 {
+    background-color: #999999;
+    color: #000;
+    position: relative;
+    border-bottom: solid 1px #999999;
+}
+
+#menu ul li a.nivel1 {
+    display: block;
+    display: none;
+}
+
+#menu ul li ul {
+    display: none;
+}
+
+#menu ul li a:hover ul, #menu ul li:hover ul {
+    display: block;
+    position: absolute;
+    width: 816px;
+    border: solid 1px #fff;
+    border-top: none;
+    background-color: #999999;
+}
+
+#menu ul li ul li a {
+    width: 160px;
+    padding: 6px 0px 8px 0px;
+    border: none;
+    background-color: #999999;
+}
+
+#menu ul li ul li a:hover {
+    position: relative;
+    text-decoration: underline;
+    border-bottom: none;
+}
+
+#seccion {
+    float: left;
+    width: 660px;
+    margin: 20px;
+}
+
+#columna {
+    float: left;
+    width: 220px;
+    margin: 20px 0px;
+    padding: 20px;
+    background: #CCCCCC;
+}
+
+#columna ul.nivel2 {
+    display: none;
+    list-style-type: square;
+    list-style-position: outside;
+    padding-left: 40px;
+    width: 140px;
+    background: #F4F4F4;
+    color: green;
+    list-style-image: none;
+}
+
+#columna ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 180px;
+}
+
+#columna li:hover ul {
+    display: block;
+}
+
+#columna ul.nivel2 a {
+    text-decoration: none;
+    color: black;
+}
+
+#columna ul.nivel2>li:hover {
+    display: list-item;
+}
+
+#columna li.menu {
+    display: list-item;
+}
+
+#columna li.menu:hover {
+    list-style-image: url("img/flecha.png");
+    list-style-position: inside;
+}
+
+#pie {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #999999;
+}
+
+img {
+    width: 200px;
+    margin: 5px;
+}
+
+article {
+    border: 1px solid #999999;
+    padding: 20px;
+    margin-bottom: 15px;
+    background: linen;
+}
+
+article footer {
+    text-align: right;
+    color: steelblue;
+    font-weight: bold;
+}
+
+article header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article hgroup {
+    margin-bottom: 10px;
+}
+
+time {
+    color: #999999;
+}
+
+#cabecera h1 {
+    font: bold 24px verdana, sans-serif;
+}
+
+article h1 {
+    font: bold 20px verdana, sans-serif;
+}
+
+h2 {
+    font: bold 14px verdana, sans-serif;
+}
+
+figcaption {
+    font: italic 12px verdana, sans-serif;
+}
