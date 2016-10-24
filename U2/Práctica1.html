@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Ejemplo de HTML5">
+	<meta name="keywords" content="HTML5, CSS3, JavaScript">
+	<title>Título de la web</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<header id="cabecera">
+		<div class="logo">
+			<img src="img/imagen.png" alt="logo"></img>
+		</div>
+		<h1>Cabecera del sitio web</h1>
+	</header>
+
+	<nav id="menu">
+		<ul>
+			<li class="menu">inicio
+				<ul class="nivel2">
+					<li>Post1
+						<ul class="nivel3">
+							<li><a href="#">Post11</a></li>
+							<li><a href="#">Post12</a></li>
+						</ul>
+					</li>
+					<li>Post2
+						<ul class="nivel3">
+							<li><a href="#">Post21</a></li>
+							<li><a href="#">Post22</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="menu">categoría 1
+				<ul class="nivel2">
+					<li>Post
+						<ul class="nivel3">
+							<li><a href="#">Post</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="menu">categoría 2
+				<ul class="nivel2">
+					<li>Post
+						<ul class="nivel3">
+							<li><a href="#">Post</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="menu">contacto
+				<ul class="nivel2">
+					<li>Post
+						<ul class="nivel3">
+							<li><a href="#">Post</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<div id="container">
+		<section id="seccion">
+			<article>
+				<header>
+					<hgroup>
+						<h1>Título de la primera entrada</h1>
+						<h2>Subtítulo de la primera entrada</h2>
+					</hgroup>
+					<time datetime="2016-10-10" pubdate>publicado 10-10-2016</time>
+				</header>
+
+				Este es el texto de mi primera entrada
+				<figure>
+					<img src="http://bloginteligenciacolectiva.com/wp-content/uploads/2013/08/blogs-bloguers.jpg">
+					<figcaption>
+						Esta es el caption de la imagen
+					</figcaption>
+				</figure>
+
+				<footer>
+					<p>comentarios (0)</p>
+				</footer>
+			</article>
+
+			<article>
+				<header>
+					<hgroup>
+						<h1>Título de la segunda entrada</h1>
+						<h2>Subtítulo de la segunda entrada</h2>
+					</hgroup>
+					<time datetime="2016-10-10" pubdate>publicado 10-10-2016</time>
+				</header>
+				Este es el texto de mi segunda entrada
+				<footer>
+					<p>comentarios (0)</p>
+				</footer>
+			</article>
+		</section>
+
+		<aside id="columna">
+			<ul>
+				<li class="menu">Enero
+					<ul class="nivel2">
+						<li><a href="#">Post</a></li>
+						<li><a href="#">Post</a></li>
+						<li><a href="#">Post</a></li>
+					</ul>
+				</li>
+				<li class="menu">Febrero
+					<ul class="nivel2">
+						<li><a href="#">Post</a></li>
+						<li><a href="#">Post</a></li>
+						<li><a href="#">Post</a></li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+	</div>
+	<footer id="pie">
+		Derechos Reservados &copy; 2016-2020
+	</footer>
+
+</body>
+
+</html>
