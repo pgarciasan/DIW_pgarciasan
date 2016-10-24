@@ -1,12 +1,7 @@
-/*Reseteamos las cajas*/
-
 * {
     margin: 0px;
     padding: 0px;
 }
-
-
-/* Para que los nuevos elementos sean tratamos como block */
 
 header, section, footer, aside, nav, article, figure, figcaption, hgroup {
     display: block;
@@ -18,12 +13,8 @@ header, section, footer, aside, nav, article, figure, figcaption, hgroup {
     width: 100%;
     height: 20%;
     display: table;
-    /*Compórtate como una tabla*/
     padding: 10px;
 }
-
-
-/*div.logo y h1 se comportan como celdas de la tabla*/
 
 .logo {
     display: table-cell;
@@ -45,9 +36,6 @@ header, section, footer, aside, nav, article, figure, figcaption, hgroup {
     font: bold 2em Helvetica, sans-serif;
 }
 
-
-/*Centramos el elemento contenedor y alineamos normalmente dentro del contenedor*/
-
 body {
     text-align: center;
     margin 0;
@@ -59,22 +47,10 @@ body {
     text-align: left;
 }
 
-
-/* barra de navegación */
-
 #menu {
     background: #CCCCCC;
     padding: 5px 15px;
 }
-
-
-/*
-#menu li {
-	display: inline-block;
-	list-style: none;
-	padding: 5px;
-	font: bold 14px verdana, sans-serif;
-}*/
 
 #menu ul {
     display: inline-block;
@@ -86,20 +62,13 @@ body {
     width: 120px;
 }
 
-
-/*
-#menu ul li {
-    float: left;
-}*/
-
-
-/*#menuli.menu {
-    display: list-item;
-}*/
-
-#menu ul li:hover {
+#menu ul li.menu:hover {
     list-style-image: url("img/flecha.png");
     list-style-position: inside;
+}
+
+#menu li.menu ul {
+    display: none;
 }
 
 #menu li.menu:hover ul {
@@ -108,15 +77,7 @@ body {
     background: #CCCCCC;
 }
 
-#menu li.menu ul {
-    display: none;
-    text-decoration: none;
-    padding: 5px;
-    position: relative;
-}
-
 #menu ul.nivel2 li {
-
     float: left;
     position: relative;
     text-decoration: none;
@@ -124,108 +85,39 @@ body {
     padding: 10px;
 }
 
-#menu li ul.nivel3 {
-  display: none;
-
+#menu ul.nivel2 li:hover {
+    list-style-image: url("img/flecha.png");
+    list-style-position: inside;
 }
-#menu li:hover ul.nivel3 {
-  display:block;
 
-}
-#menu li ul.nivel3 li{
-  float:left;
-
-}
-#menu ul.nivel3 li{
-  float:left;
-
-}
-/*#menu ul li ul li:hover ul {
-  float:left;
-    display: block;
-    position: relative;
-    margin-left: 10px;
-
-}*/
-
-#menu ul li ul li ul li {
+#menu ul.nivel2 li ul li {
     display: none;
-    float: left;
-    position: relative;
 }
 
-#menu ul li ul li:hover ul li {
-    display: inline-block;
-
-    float: left;
+#menu ul.nivel2 li:hover ul li {
+    color: red;
+    display: block;
 }
 
-
-/*#menu ul li ul.nivel2 li {
+#menu ul.nivel3 li {
+    display: inline;
     float: left;
     position: relative;
-    text-decoration: underline;
-    border-bottom: none;
+    padding: 10px;
+}
+
+#menu ul.nivel3 li a {
+    text-decoration: none;
     list-style-image: none;
-}*/
+    padding: 10px;
+}
 
-
-/*#menu ul.nivel2 li:hover {
-  padding: 5px;
-    position:relative;
-}*/
-
-
-/*#menu ul li ul {
-    display: none;
-}*/
-
-
-/*#menu li>ul.nivel3 {
-    display: none;
-}*/
-
-
-/*#menu li:hover>ul.nivel3 {
+#menu ul li ul li:hover ul {
+    float: left;
     display: block;
     position: relative;
     margin-left: 10px;
-}*/
-
-
-/*#menu ul li a:hover ul {
-    display: block;
-    position: absolute;
-    width: 816px;
-    border: solid 1px #fff;
-    border-top: none;
-    background-color: #999999;
-}*/
-
-
-/*#menu ul li ul li ul li a {
-color: black;
-    background-color: #CCCCCC;
-    text-decoration: none;
-}*/
-
-
-/*
-#menu ul li ul li a:hover {
-    position: relative;
-    text-decoration: none;
-    border-bottom: none;
-}*/
-
-
-/*Aclaración inline-block: se comporta como un in-line
-pero el conjunto de inlines's ocupan todo el ancho como un block.
-Equivale a un float:left pero ahorramos el clear en el sig elemento.
-Más info: http://www.w3schools.com/css/css_inline-block.asp
-*/
-
-
-/* dos columnas para los bloques de section y aside */
+}
 
 #seccion {
     float: left;
@@ -290,18 +182,12 @@ Más info: http://www.w3schools.com/css/css_inline-block.asp
     list-style-position: inside;
 }
 
-
-/* Pie a una columna */
-
 #pie {
     clear: both;
     text-align: center;
     padding: 20px;
     border-top: 2px solid #999999;
 }
-
-
-/* ultimos retoques */
 
 img {
     width: 200px;
@@ -333,9 +219,6 @@ article hgroup {
 time {
     color: #999999;
 }
-
-
-/*Estilos de letra*/
 
 #cabecera h1 {
     font: bold 24px verdana, sans-serif;
