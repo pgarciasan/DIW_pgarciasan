@@ -7,7 +7,7 @@ padding: 0;
 
 /*Estilo base*/
 body {
-font-family: "Lucida Sans", sans-serif;
+font-family: "Open Sans", sans-serif;
 }
 header {
 background-color: #9933cc;
@@ -20,9 +20,9 @@ width:100%;
 .logo{
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
 }
 .logo img{
-  width: 80px;
   margin: 10px;
 }
 header h1{
@@ -77,8 +77,15 @@ section {
   display: block;
 }
 
+aside img{
+  max-width: 300px;
+  vertical-align: middle;
+  margin-top: 10px;
+  border: 1px solid #33b5e5;
+}
+
 /********** Dispositivos grandes **********/
-@media (min-width: 993px) {
+@media screen and (min-width: 993px) {
   .col-lg-1 {width: 8.33%;}
   .col-lg-2 {width: 16.66%;}
   .col-lg-3 {width: 25%;}
@@ -91,36 +98,44 @@ section {
   .col-lg-10 {width: 83.33%;}
   .col-lg-11 {width: 91.66%;}
   .col-lg-12 {width: 100%;}
-  img.logo{
-    width: 120px;
+  header img{
+    max-width: 120px;
+  }
 }
 
-/*@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   [class*="col-"] {
     width: 100%;
   }
-}*/
-@media (min-width: 992px) and (max-width: 768px) {
-  [class*="col-"] {
-    width: 100%;
+  /* Limitar tamaño elementos menú */
+  .col-lg-3.menu{
+    width: 25%;
   }
-  img.logo{
-    max-width: 100px;
-  }
-  #camisa{
-    display:none;
-  }
-}
-/* Para dispositivos pequeÃ±os: */
-@media (max-width: 767px) {
-  [class*="col-"] {
-    width: 100%;
-  }
-  img.logo{
-    width: 60px;
+  /* Formatear imagen a tamaño medio */
+  header img{
     max-width: 80px;
   }
-  #camisa{
-    display:none;
+  /* Ocultar imagen camiseta */
+  aside img {
+    display: none;
+  }
+}
+
+/* Para dispositivos pequeÃ±os: */
+@media screen and (max-width: 767px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  /* Formatear imagen a tamaño pequeño */
+  header img{
+    max-width: 60px;
+  }
+  /* Ocultar imagen camiseta */
+  aside img {
+    display: none;
+  }
+  /* Ocultar tercer post */
+  .post-3{
+    display: none;
   }
 }
