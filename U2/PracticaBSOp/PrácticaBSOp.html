@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ejemplo Grid Básico</title>
+    <title>Práctica Bootstrap opcional</title>
     <style>
 
     </style>
@@ -28,8 +28,12 @@
               <span class="icon-bar"></span>
             </button>
                 <h1 class="title">BAR PEPE</h1>
-                <div class="btn-group" role="group" aria-label="...">
-                    <button type="button" class="btn btn-default"><a href="#">C/ Falsa123</a></button>
+                <!-- Botones agrupados en la misma línea
+                Botón que despliega menú
+                http://getbootstrap.com/components/ -->
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default"><a href="#"> <!-- En aquí un enlace para GoogleMaps-->
+                      C/ Falsa123</a></button>
                     <div class="btn-group" role="group">
                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Contacto
@@ -55,18 +59,17 @@
         <!-- /.container -->
     </nav>
     <!-- /.navbar -->
-
     <div class="container">
         <header class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h2 class="center">Menú</h2>
         </header>
     </div>
-
     <div class="container">
-
         <article class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
             <div>
-                <img src="calamares.jpg" width="100px" alt="img" class="img-responsive img-thumbnail">
+              <!-- estilo aplicado a imágenes con clases de bootstrap
+              http://librosweb.es/libro/bootstrap_3/capitulo_4/imagenes.html -->
+                <img src="calamares.jpg" width="80px" alt="img" class="img-thumbnail">
                 <header>
                     <h2 class="calamares">Calamares</h2>
                 </header>
@@ -75,12 +78,13 @@
                     reina,reina, reina de la morería,
                 </p>
             </div>
+            <!-- caja para contenido destacado
+            http://www.w3schools.com/bootstrap/bootstrap_jumbotron_header.asp -->
             <div class="jumbotron">Bacallà, bacallà, bacallà</div>
         </article>
-
         <article class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
             <div>
-                <img src="bravas.jpg" width="100px" alt="img" class="img-responsive img-circle">
+                <img src="bravas.jpg" width="80px" alt="img" class="img-circle">
                 <header>
                     <h2 class="bravas">Bravas</h2>
                 </header>
@@ -91,11 +95,9 @@
             </div>
             <div class="jumbotron">Unas pican y otras non</div>
         </article>
-
-
         <article class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
             <div>
-                <img src="tortilla.jpg" width="100px" alt="img" class="img-responsive img-rounded">
+                <img src="tortilla.jpg" width="80px" alt="img" class="img-rounded">
                 <header>
                     <h2 class="tortilla">Tortilla</h2>
                 </header>
@@ -107,13 +109,10 @@
             </div>
             <div class="jumbotron">Pruebe la versión a base de Lay's Campesinas</div>
         </article>
-
-
     </div>
     <div class="container">
-
-
-
+      <!-- cajas de texto (con borde y padding) con sección para título (con fondo de color) y contenido
+      http://librosweb.es/libro/bootstrap_3/capitulo_6/paneles.html-->
         <div class="panel panel-primary">
             <div class="panel-heading">Menú del día</div>
             <div class="panel-body">
@@ -124,7 +123,6 @@
                 </ul>
             </div>
         </div>
-
         <div class="panel panel-danger">
             <div class="panel-heading">
                 <h3 class="panel-title">Advertencia</h3>
@@ -133,8 +131,6 @@
                 Comida churriliciosa. Déjese el cinturón en casa.
             </div>
         </div>
-
-
     </div>
 </body>
 
