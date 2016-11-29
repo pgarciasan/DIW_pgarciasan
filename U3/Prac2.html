@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            text-align: center;
+        }
+        header {
+            text-align: left;
+            width: 100%;
+            display: table;
+            padding: 10px;
+        }
+        h1,
+        header img {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        header>img {
+            max-width: 200px;
+            float: right;
+        }
+        picture {
+            width: 100%;
+        }
+        section {
+            padding: 20px;
+        }
+        section>article {
+            float: left;
+            display: block;
+            width: 50%;
+        }
+        figure {
+            text-align: left;
+            margin-left: 25%;
+        }
+        article>img, article>figure>img{
+          max-width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="arrow.svg"></img>
+        <h1>Diseño Gráfico para Web Responsive</h1>
+    </header>
+    <article>
+        <picture>
+            <source media="(min-width: 1024px)" width="1024" height="320" srcset="mobile-phone-lg70.jpg">
+            <source media="(min-width: 640px)"  width="640" height="200" srcset="mobile-phone-md.jpg">
+            <source media="(min-width: 320px)"  width="320" height="100" srcset="mobile-phone-sm.jpg">
+            <!-- img para navegadores que no soportan el picture element -->
+            <img src="mobile-phone-1419275.jpg" width="320" height="100" alt="su navegador no es compatible">
+        </picture>
+    </article>
+    <section>
+        <article>
+            <figure>
+                <img src="sho.svg" alt="img"></img>
+                <figcaption>Vicepresidente Sénior<br>Resirtx&Hinnoveitsion<br>Manchurian Enterprises</figcaption>
+            </figure>
+        </article>
+        <article>
+            <img src="telefono.gif" alt="img"></img>
+            <p>96 111 22 33</p>
+            <p>666 333 999</p>
+            <p>C/ Falsa, 123</p>
+        </article>
+    </section>
+</body>
+
+</html>
