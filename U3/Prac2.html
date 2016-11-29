@@ -9,38 +9,47 @@
         body {
             text-align: center;
         }
+
         header {
             text-align: left;
             width: 100%;
             display: table;
             padding: 10px;
         }
+
         h1,
         header img {
             display: table-cell;
             vertical-align: middle;
         }
+
         header>img {
             max-width: 200px;
             float: right;
         }
+
         picture {
             width: 100%;
         }
+
         section {
             padding: 20px;
         }
+
         section>article {
             float: left;
             display: block;
             width: 50%;
         }
+
         figure {
             text-align: left;
             margin-left: 25%;
         }
-        article>img, article>figure>img{
-          max-width: 100px;
+
+        article>img,
+        article>figure>img {
+            max-width: 100px;
         }
     </style>
 </head>
@@ -53,10 +62,10 @@
     <article>
         <picture>
             <source media="(min-width: 1024px)" width="1024" height="320" srcset="mobile-phone-lg70.jpg">
-            <source media="(min-width: 640px)"  width="640" height="200" srcset="mobile-phone-md.jpg">
-            <source media="(min-width: 320px)"  width="320" height="100" srcset="mobile-phone-sm.jpg">
+            <source media="(min-width: 640px)" width="640" height="200" srcset="mobile-phone-md.jpg">
+            <source media="(min-width: 320px)" width="320" height="100" srcset="mobile-phone-sm.jpg">
             <!-- img para navegadores que no soportan el picture element -->
-            <img src="mobile-phone-1419275.jpg" width="320" height="100" alt="su navegador no es compatible">
+            <img src="mobile-phone-1419275.jpg" alt="su navegador no es compatible">
         </picture>
     </article>
     <section>
