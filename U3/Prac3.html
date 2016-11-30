@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        header {
+            text-align: left;
+            width: 100%;
+            display: table;
+            padding: 10px;
+        }
+
+        h1,
+        header img {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        header>img {
+            max-width: 200px;
+            float: right;
+        }
+
+        picture {
+            width: 100%;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        section>article {
+            float: left;
+            display: block;
+            width: 50%;
+        }
+
+        figure {
+            text-align: left;
+            margin-left: 25%;
+        }
+
+        article>img,
+        article>figure>img {
+            max-width: 100px;
+        }
+
+        .tel {
+            width: 150px;
+            height: 200px;
+            background: transparent url("iconninja-sprites.png") no-repeat;
+            background-position: 0px 0px;
+            transition: background-position .1s ease-out;
+            float: left;
+        }
+
+        .mail {
+            width: 150px;
+            height: 200px;
+            background: transparent url("iconninja-sprites.png") no-repeat;
+            background-position: -150px 0px;
+            transition: background-position .1s ease-out;
+            float: left;
+        }
+
+        .tel:hover {
+            background-position: 0px 20px;
+            font-size: 20px;
+        }
+
+        .mail:hover {
+            background-position: -150px 20px;
+            font-size: 20px;
+        }
+
+        .icons a {
+            color: #fff;
+            font-size: 40px;
+        }
+
+        .fa-facebook {
+            border-radius: 10px;
+            padding: 15px;
+            background: #3b5998
+        }
+
+        .fa-linkedin {
+            border-radius: 10px;
+            padding: 15px;
+            background: #007bb6
+        }
+
+        .fa-twitter {
+            border-radius: 10px;
+            padding: 15px;
+            background: #00aced
+        }
+
+        .fa-google-plus {
+            border-radius: 10px;
+            padding: 15px;
+            background: #dd4b39
+        }
+
+        i {
+            transition: all 0.2s ease-in-out;
+        }
+
+        i:hover {
+            opacity: .7;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            .icons a {
+                color: #fff;
+                font-size: 30px;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .icons a {
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="arrow.svg"></img>
+        <h1>Diseño Gráfico para Web Responsive</h1>
+        <div class="icons">
+            <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="http://linkedin.com/"><i class="fa fa-linkedin"></i></a>
+            <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a href="http://plus.google.com/"><i class="fa fa-google-plus"></i></a>
+        </div>
+    </header>
+    <article>
+        <picture>
+            <source media="(min-width: 1024px)" width="1024" height="320" srcset="mobile-phone-lg70.jpg">
+            <source media="(min-width: 640px)" width="640" height="200" srcset="mobile-phone-md.jpg">
+            <source media="(min-width: 320px)" width="320" height="100" srcset="mobile-phone-sm.jpg">
+            <!-- img para navegadores que no soportan el picture element -->
+            <img src="mobile-phone-1419275.jpg" alt="su navegador no es compatible">
+        </picture>
+    </article>
+    <section>
+        <article>
+            <figure>
+                <img src="sho.svg" alt="img"></img>
+                <figcaption>Vicepresidente Sénior<br>Resirtx&Hinnoveitsion<br>Manchurian Enterprises</figcaption>
+            </figure>
+        </article>
+        <article>
+            <a class='tel' href="tel:+1-303-499-7111">+1-303-499-7111</a>
+            <a class='mail' href="#">terrorfex@gmail.com</a>
+        </article>
+    </section>
+</body>
+
+</html>
