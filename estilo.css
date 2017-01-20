@@ -1,6 +1,6 @@
 * {
 	margin: 0px; padding: 0px;
-	font-family: arial, helvetica, sans-serif; color: #0bb664; background: #FFFFFF;
+	font-family: arial, helvetica, sans-serif; color: #088829; background: #FFFFFF;
 	line-height: 1.3em;
 }
 
@@ -11,6 +11,7 @@ html {
 
 body {
 	margin: 10px;
+  font-family: Helvetica, Verdana, sans-serif;
 }
 
 h1 {
@@ -49,11 +50,11 @@ p span{
 }
 
 a {
-	color: #598eff; text-decoration: none; border-bottom: 1px dotted #598eff;
+	color: #2e00ee; text-decoration: none; border-bottom: 1px dotted #2e00ee;
 }
 
 a:visited {
-	color: #598eff; border-bottom: 1px solid #598eff;
+	color: #2e00ee; border-bottom: 1px solid #2e00ee;
 }
 
 a:focus, a:hover {
@@ -101,7 +102,7 @@ a:focus, a:hover {
 	margin-left: 10px;
 }
 
-/* Esconde todos los apartados del contenido excepto presentación */
+/* Esconde todos los apartados del contenido excepto presentaciÃ³n */
 #primeros, #segundos, #postres {
 	display: none;
 }
@@ -137,7 +138,7 @@ a:focus, a:hover {
 
 }
 
-/* Para ocultar algo en los navegadores gráficos */
+/* Para ocultar algo en los navegadores grÃ¡ficos */
 .oculto {
   position: absolute;
   top: -5000px;

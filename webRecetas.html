@@ -1,23 +1,10 @@
 <!DOCTYPE html>
-<html lang="es, cat">
+<html lang="es">
   <head>
     <meta charset="utf-8">
+    <title>Las Recetas de la Abuela</title>
     <link rel="stylesheet" href="estilo.css">
-    <title>The Amazing Agüela's Recettes</title>
-    <script type="text/javascript">
-      function visualiza(elId) {
-        //selecciona los div dentro de contenido
-        var losDiv = document.getElementById("contenido").getElementsByTagName("div");
-        //oculta los div seleccionados
-        for(var i = 0; i < losDiv.length; i++){
-          losDiv[i].style.display = "none";
-        }
-        //muestra el div indicado
-        document.getElementById(elId).style.display = "block";
-        // cancela el evento normal del enlace (equivale a e.preventDefault());
-        return false;
-      }
-    </script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <div id="titulo">
@@ -26,7 +13,8 @@
         <p>Como en casa en ningún sitio!</p>
       </div>
       <div id="logo">
-        <img src="logo.png" alt = "logo" width="85">
+        <a title="El Recetario de Mari(abre en nueva ventana)" target="_blank" href="http://www.elrecetariodemari.com/"><img src="logo.png" alt="El Recetario de Mari"
+           longdesc="#descripcionLogo" width="85"></img></a>
       </div>
     </div>
 
@@ -45,12 +33,12 @@
   <h2>Bienvenido a la web de recetas.</h2>
   <p>
     Esta es una web dedicada a las recetas que hemos tomado en casa toda la vida. Como decía mi abuela:
-    <span>Aprofita nen! Com es menja a casa no es menja enlloc!</span>
+    <span lang="cat">Aprofita nen! Com es menja a casa no es menja enlloc!</span>
   </p>
   <p>
     Pulsa sobre el tipo de receta que te interese y ponte <strong>manos a la obra!</strong>
   </p>
-  <p>Bon Appetit!</p>
+  <p lang="fr">Bon Appetit!</p>
 
   <h3><a href="#primeros" onclick="visualiza('primeros'); return false;">Entrantes y Primeros platos</a></h3>
   Aperitivos, ensaladas, sopas y cremas.
@@ -62,11 +50,11 @@
   Conoce las técnicas para cocinar los mejores postres caseros.
 </div>
 
-<div id="primeros">
+<div id="primeros" class="oculto">
 <p>Entrantes y Primeros platos</p>
 <h3>Aperitivos, ensaladas, sopas y cremas.</h3>
 <ul>
-	<li><a href="#">Tortilla de la abuela</a></li>
+	<li><a href="tortilla.html" title="Receta de la tortilla de patatas">Tortilla de la abuela</a></li>
   <li><a href="#">Sopa castellana</a></li>
   <li><a href="#">Crema de calabaza</a></li>
   <li><a href="#">Champiñones rellenos</a></li>
@@ -75,7 +63,7 @@
 </ul>
 </div>
 
-<div id="segundos">
+<div id="segundos" class="oculto">
 <p>Segundos: El plato fuerte!</p>
 <h3>Pasta, arroces, carnes y pescados.</h3>
 <ul>
@@ -88,7 +76,7 @@
 </ul>
 </div>
 
-<div id="postres">
+<div id="postres" class="oculto">
 <p>Deja hueco para los Postres</p>
 <h3>Conoce las técnicas para cocinar los mejores postres caseros.</h3>
 <ul>
@@ -100,13 +88,13 @@
 </div>
 </div>
 <div id="lateral">
-  <h3>Síguenos</h3>
+  <h2>Síguenos</h2>
   <ul>
     <li><a href="#">Twitter</a></li>
     <li><a href="#">Youtube</a></li>
     <li><a href="#">Facebook</a></li>
   </ul>
-  <h3>Webs amigas</h3>
+  <h2>Webs amigas</h2>
   <ul>
     <li><a href="#">El cocinillas</a></li>
     <li><a href="#">Cocina para dummys</a></li>
@@ -117,7 +105,19 @@
 <div id="pie">
 <ul>
   <!-- Aquí van los iconos de accesibilidad y la explicación sobre accesibilidad -->
+  <ul>
+	<li><a rel="nofollow" href="http://validator.w3.org/check?uri=referer"><img style="border: 0; width: 88px; height: 31px" src="img/valid-xhtml10-blue.png" alt="¡XHTML 1.0 Strict Válido!" /></a></li>
+	<li><a rel="nofollow" href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border: 0; width: 88px; height: 31px" src="img/valid-css-blue.png" alt="¡CSS Válido!" /></a></li>
+	<li><a rel="nofollow" href="http://www.w3.org/WAI/WCAG1AAA-Conformance" title="Explicación del Nivel Triple-A de Conformidad de WCAG 1.0"><img style="border: 0; width: 88px; height: 31px" src="img/wcag1AAA-blue.png" alt="Conformidad con el Nivel Triple-A de las Directrices de Accesibilidad al Contenido Web 1.0" /></a></li>
+	<li><a rel="nofollow" href="https://www.w3.org/TR/WCAG20/#conformance-claims" title="Explicación del Nivel Triple-A de Conformidad de WCAG 2.0"><img style="border: 0; width: 88px; height: 31px" src="img/wcag2AAA-blue.png" alt="Conformidad con el Nivel Triple-A de las Directrices de Accesibilidad al Contenido Web 2.0" /></a></li>
+	<li><a rel="nofollow" href="http://www.tawdis.net/taw3/online?url=http://accesibilidadweb.dlsi.ua.es/?menu=guiabreve-9" title="Análisis de la accesibilidad de la página con TAW"><img style="border: 0; width: 60px; height: 31px" src="img/taw_1_AAA.png" alt="TAW. Nivel triple A. WCAG 1.0 WAI" /></a></li>
+	<li><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/es/"><img alt="Creative Commons Reconocimiento-No comercial-Sin obras derivadas 3.0 Espa&#241;a License" style="border-width:0" src="img/cc-by-nc-nd.png" /></a></li>
 </ul>
+</ul>
+</div>
+
+<div class="oculto" id="descripcionLogo">
+  <p>Dibujo de una entrañable abuela que enlaza a la web "El Recetario de Mari". Se abre en una nueva ventana.</p>
 </div>
 </body>
 </html>
