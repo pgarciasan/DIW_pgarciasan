@@ -1,0 +1,67 @@
+{
+	"categorias": [{
+		"nombre": "Arroces",
+		"desc": "El arroz está muy arraigado en la cultura japonesa y se lo considera muchísimo más que una mera fuente de carbohidratos para acompañar la comida.Y es que, en japonés, la palabra(gohan) no sólo significa arroz cocido;también es sinónimo de comida.",
+		"platos": [{
+			"nombre": "Chāhan",
+			"desc": "Chahan is a Japanese fried rice dish prepared with rice as a primary ingredient and myriad additional ingredients and seasonings.The dish is typically fried, and can be cooked in a wok.Chahan may have originated in the 1860 s from Chinese immigrants arriving at the port of Kobe.Chahan is a staple food in homes in Japan.A variation of the dish is Kimchi chahan. Some restaurants outside of Japan serve the dish as a part of their fare."
+		}, {
+			"nombre": "Chazuke",
+			"desc": "Chazuke or ochazuke is a simple Japanese dish made by pouring green tea, dashi, or hot water over cooked rice, roughly in the same proportion as milk over cereal, usually with savoury toppings. Common toppings include Japanese pickles(tsukemono), umeboshi, shiokara(pickled seafood), scallionsand wasabi. Chazuke provides a good way to use leftover rice as a quick snack because this dish is easy to make.It is also known as cha - cha gohan."
+		}, {
+			"nombre": "Onigiri",
+			"desc": "O-nigiri, also known as o-musubi, nigirimeshi or rice ball, is a Japanese food made from white rice formed into triangular or cylindrical shapes and often wrapped in nori(seaweed).Traditionally, an onigiri is filled with pickled ume(umeboshi), salted salmon, katsuobushi, kombu, tarako, or any other salty or sour ingredient as a natural preservative. Because of the popularity of onigiri in Japan, most convenience stores stock their onigiri with various fillings and flavors. There are even specialized shops which only sell onigiri to take out."
+		}, {
+			"nombre": "Sekihan",
+			"desc": "Sekihan is a Japanese traditional dish. It is sticky rice steamed with adzuki beans, which give a reddish color to the rice, hence its name. The rice of ancient times of Japan was red.Therefore, red rice was used in the ancient divine work.Red rice has a strong taste of tannin, and its cultivation has been almost completely abandoned. The present Sekihan is colored red using adzuki.Sekihan is often served on special occasions throughout the year in Japan, for example, birthdays, weddings and some holidays, such as Shichi - Go - San. In some places it is customarily made when a young woman reaches menarche, although this is less common now than it was in the past   "
+		}]
+	}, {
+		"nombre": "Fideos",
+		"desc": "Noodles are a staple part of Japanese cuisine. They are often  served chilled with dipping sauces,  or in soups or hot dishes.  Remarkably,  none of the following are rice - based.",
+		"platos": [{
+			"nombre": "Ramen",
+			"desc": "Ramen are thin, wheat-based noodles made from wheat flour, salt, water, and kansui, a form of alkaline water. The dough is risen before being rolled.They were imported from China during the Meiji Period.Ramen noodles have a firm texture and are usually pale yellow in color.The noodles may vary in shape, width, and length.They are served in a broth.Examples of ramen dishes are Shoyu ramen, Shio ramen, Miso ramen, Tonkotsu ramen, and Curry ramen."
+		}, {
+			"nombre": "Shirataki",
+			"desc": "Shirataki are thin, translucent,   gelatinous traditional Japanese noodles made from the konjac yam(devil 's tongue yam or elephant yam). The word '   shirataki ' 'white waterfall', describing the appearance of these noodles.Largely composed of water and glucomannan, a water - soluble dietary fiber, they are very low in digestible carbohydrates and calories and have little flavor of their own.Shirataki noodles can be found both in dry and soft 'wet'  forms Asian markets and some supermarkets.When purchased wet, they are packaged in liquid.They normally have a shelf life of up to one year.Some brands may require rinsing or par - boiling as the water they are packaged in has an odor that may be unpleasant to those not accustomed to it."
+		}, {
+			"nombre": "Soba",
+			"desc": "Soba is a noodle made from buckwheat and wheat  flour. Soba noodles are available dried or fresh.They may be served with hot broth or cold with dipping sauce.Examples of soba dishes are zaru soba(chilled),  kake soba,  tempura soba,  kitsune soba,  and tororo soba.Although the popular Japanese dish Yakisoba includes 'soba' in its name,  the dish is made with Chinese - style noodles(chūkamen)."
+		}, {
+			"nombre": "Sōmen",
+			"desc": "Sōmen   are   very   thin   white   Japanese   noodles   made   of   wheat   flour,   less   than   1.3   mm   in   diameter.The   noodles   are   usually   served   cold.The   noodles   '   diameter   is   the   chief   distinction   between   sōmen   and   the   thicker   wheat   noodles   hiyamugi   and   Japanese   wheat   noodles   udon.Sōmen   noodles   are   stretched   when   made,   as   are   some   types   of   udon   noodles.The   dough   is   stretched   with   the   help   of   vegetable   oil   to   make   very   thin   strips   and   then   air   dried.Sōmen   are   usually   served   cold   with   a   light   flavored   dipping   sauce   or   tsuyu.The   tsuyu   is   usually   a   katsuobushi   -   based   sauce   that   can   be   flavored   with   Japanese   bunching   onion,   ginger,   or   myoga.In   the   summer,   sōmen   chilled   with   ice   is   a   popular   meal   to   help   stay   cool.   "
+		}]
+	}, {
+		"nombre": "Sushi",
+		"desc": "Sushi   is   the   Japanese   preparation   and   serving   of   cooked      vinegared   rice(sushi   -   meshi)   combined   with   varied   ingredients(neta),      chiefly   seafood,      vegetables,      meat(usually   fish),      and   occasionally      tropical   fruits.Styles   of   sushi   and   its   presentation   vary   widely,      but   the   key   ingredient   in   all   cases   is   the   rice,      also   referred   to   as      shari   or   sumeshi.         ",
+		"platos": [{
+			"nombre": "Inarizhusi",
+			"desc": "Inarizushi   is   a   pouch   of   fried   tofu   typically   filled   with   sushi   rice   alone.It   is   named   after   the   Shinto   god   Inari.Foxes,   messengers   of   Inari   are   believed   to   have   a   fondness   f   or   fried   tofu,   and   an   Inari   -   zushi   roll   has   pointed   corners   that   resemble   fox   ears.Regional   variations   include   pouches   made   of   a   thin   omelette(fukusa   -   zushi   or   chakin   -   zushi)   instead   of   tofu.It   should   not   be   confused   with   inari   maki,   which   is   a   roll   filled   with   flavored   fried   tofu."
+		}, {
+			"nombre": "Makizushi",
+			"desc": "Makizushi   ('rolled   sushi'),      norimaki('Nori   roll')   or   makimono('variety   of   rolls')   is   a      cylindrical   piece,      formed   with   the   help   of   a   bamboo   mat   known      as   a   makisu. Makizushi   is   generally   wrapped   in   nori(seaweed),      but   is   occasionally   wrapped   in   a   thin   omelette,      soy   paper,      cucumber,      or   shiso(perilla)   leaves.Makizushi   is   usually   cut   into   six   or   eight      pieces,      which   constitutes   a   single   roll   order.            "
+		}, {
+			"nombre": "Nigirizushi",
+			"desc": "Nigirizushi   ('hand-pressed   sushi')   consists   of   an   oblong   mound   of   sushi   rice   that   the   chef   presses   between   the   palms   of   the   hands   to   form   an   oval   -   shaped   ball,   and   a   topping(the   neta)   draped   over   the   ball.It   is   usually   served   with   a   bit   of   wasabi;neta   are   typically   fish   such   as   salmon,   tuna   or   other   seafood.Certain   toppings   are   typically   bound   to   the   rice   with   a   thin   strip   of   nori,   most   commonly   octopus(tako),   freshwater   eel(unagi),   sea   eel(anago),   squid(ika),   and   sweet   egg(tamago).One   order   of   a   given   type   of   fish   typically   results   in   two   pieces,   while   a   sushi   set(sampler   dish)   may   contain   only   one   piece   of   each   topping.      "
+		}, {
+			"nombre": "Oshizushi",
+			"desc": "Oshizushi   ('pressed   sushi'),      also   known   as   hako   -   zushi,      'box   sushi'),      is   a   pressed   sushi      from   the   Kansai   region,      a   favorite   and   specialty   of   Osaka.      A   block   -   shaped   piece   is   formed   using   a   wooden   mold,      called   an   oshibako.      The   chef   lines   the   bottom   of   the   oshibako   with   the   toppings,      covers   them   with   sushi   rice,      and   then   presses   the   lid   of   the      mold   down   to   create   a   compact,      rectilinear   block.The   block      is   removed   from   the   mold   and   then   cut   into   bite   -   sized   pieces.      In   oshizushi,      all   the   ingredients   are   either   cooked   or   cured   and      raw   fish   is   never   used.         "
+		}]
+	}, {
+		"nombre": "Wagashi",
+		"desc": "Wagashi   are   traditional   Japanese   confections   that   are   often   served   with   tea,   especially   the   types   made   of   mochi,   anko (azuki   bean   paste),   and   fruits.Wagashi   are   typically   made   from   plant   ingredients.      ",
+		"platos": [{
+			"nombre": "Anmitsu",
+			"desc": "Anmitsu   is   a   Japanese   dessert   that   has      been   popular      for   many   decades.      It   is   made   of   small   cubes   of   agar   jelly,      a   white   translucent   jelly      made   from   red   algae.The   agar   is   dissolved   with   water(or   fruit   juice   such   as   apple   juice)   to   make   the   jelly.It   is   served   in   a   bowl   with      sweet   azuki   bean   paste   or   anko(the   an   part   of   anmitsu),      boiled   peas,      often   gyūhi   and   a   variety   of   fruits   such   as   peach   slices,      mikan,      pieces   of   pineapples,      and   cherries.The   anmitsu   usually   comes   with      a   small   pot   of   sweet   black   syrup,      or   mitsu(the   mitsu   part   of   anmitsu)      which   one   pours   onto   the   jelly   before   eating.      Anmitsu   is   usually   eaten   with   a   spoon   and   fork.            "
+		}, {
+			"nombre": "Dorayaki",
+			"desc": "Dorayaki   is   a   type   of   Japanese   confection,   а   red   -   bean   pancake   which   consists   of   two   small   pancake   -   like   patties   made   from   castella   wrapped   around   a   filling   of   sweet   Azuki   red   bean   paste.   Dorayaki   are   similar   to   Imagawayaki,   but   the   latter   are   cooked   with   the   batter   completely   surrounding   the   bean   paste   filling   and   are   often   served   hot.   The   original   Dorayaki   consisted   of   only   one   layer.Its   current   shape   was   invented   in   1914   by   Usagiya   in   the   Ueno   district   of   Tokyo.   In   Japanese,   dora   means   'gong',   and   because   of   the   similarity   of   the   shapes,   this   is   probably   the   origin   of   the   name   of   the   sweet.   Legend   has   it   that   the   first   Dorayaki   were   made   when   a   samurai   named   Benkei   forgot   his   gong(dora)   upon   leaving   a   farmer’   s   home   where   he   was   hiding   and   the   farmer   subsequently   used   the   gong   to   fry   the   pancakes,   thus   the   name   Dorayaki.      "
+		}, {
+			"nombre": "Mochi",
+			"desc": "Mochi   is   Japanese   rice   cake   made   of      mochigome,      a   short   -   grain   japonica   glutinous   rice.The   rice   is   pounded      into   paste   and   molded   into   the   desired   shape.In   Japan   it   is      traditionally   made   in   a   ceremony   called   mochitsuki.While   also   eaten      year   -   round,      mochi   is   a   traditional   food      for   the   Japanese   New   Year   and      is   commonly   sold   and   eaten   during   that   time.      "
+		}, {
+			"nombre": "Taiyaki",
+			"desc": "Taiyaki   is   a   Japanese   fish-shaped   cake.      The   most   common   filling   is   red   bean   paste   that   is   made   from   sweetened      azuki   beans.Other   common   fillings   may   be   custard,      chocolate,      cheese,      or   sweet   potato.Some   shops   even   sell   taiyaki   with   okonomiyaki,      gyoza      filling,      or   a   sausage   inside.      Taiyaki   is   made   using   regular   pancake   or   waffle   batter.The   batter   is      poured   into   a   fish   -   shaped   mould      for   each   side.The   filling   is   then      put   on   one   side   and   the   mold   is   closed.It   is   then   cooked   on   both      sides   until   golden   brown.         "
+		}]
+	}]
+}
