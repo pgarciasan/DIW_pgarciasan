@@ -16,10 +16,8 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style media="screen">
-
         body {
             background-color: #fee6a6;
-
         }
 
         .header {
@@ -142,8 +140,7 @@
         }
 
         footer p {
-          font-size: 16px;
-
+            font-size: 16px;
         }
 
         .mapa {
@@ -358,9 +355,9 @@
                 width: 400px;
                 height: 700px;
             }
-            footer p{
-              font-size: 0.8em;
-              text-align: right;
+            footer p {
+                font-size: 0.8em;
+                text-align: right;
             }
         }
 
@@ -409,9 +406,9 @@
                 width: 400px;
                 height: 700px;
             }
-            footer p{
-              font-size: 0.8em;
-              text-align: right;
+            footer p {
+                font-size: 0.8em;
+                text-align: right;
             }
         }
 
@@ -523,11 +520,15 @@
                     $("#seleccion").css("display", "none");
                     $("#reserva").css("display", "none");
                     $("footer").css("display", "table");
-                } else if (state.url == "Categorias.html") {
-
                 } else if (state.url == "Arroces.html" || state.url == "Fideos.html" || state.url == "Sushi.html" || state.url == "Wagashi.html") {
                     document.title = state.title;
                     url = state.url;
+                    $("#contacto").css("display", "none");
+                    $("#carrusel").css("display", "none");
+                    $("#cuerpo").css("display", "block");
+                    $("#seleccion").css("display", "none");
+                    $("#reserva").css("display", "none");
+                    $("footer").css("display", "table");
                     $(".imagen > img").click();
                 } else if (state.url == "Reserva.html") {
                     document.title = state.title;
@@ -784,8 +785,8 @@
         </div>
         <div class="contacto visible-lg visible-md">
             <p>Calle Falsa, 123
-            <br>49054
-            <br>Valencia</p>
+                <br>49054
+                <br>Valencia</p>
         </div>
         <div class="contacto2 visible-lg visible-md">
             <a class='tel' href="tel:968 495 495">968 495 495</a>
@@ -799,8 +800,8 @@
         </div>
         <div class="visible-sm visible-xs">
             <p>Av de Giorgeta, 24
-            <br>968 495 495
-            <br>elorondoshogun@gmail.com</p>
+                <br>968 495 495
+                <br>elorondoshogun@gmail.com</p>
         </div>
     </footer>
 </body>
