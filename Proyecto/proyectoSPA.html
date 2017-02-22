@@ -16,14 +16,8 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style media="screen">
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            background-color: lightgrey;
+            background-color: #fee6a6;
         }
 
         .header {
@@ -74,13 +68,8 @@
             margin: auto;
         }
 
-        #myCarousel {
-            background: url("fondo.jpg") no-repeat center center;
-        }
-
         #myCarousel img {
             padding: 2em;
-            width: 40%;
         }
 
         #cuerpo {
@@ -141,7 +130,7 @@
             width: 100%;
             border-top: 4px solid gold;
             padding: 2em;
-            background-color: lightgrey;
+            background-color: #efd48f;
         }
 
         footer>* {
@@ -224,6 +213,14 @@
             opacity: .7;
         }
 
+        .jumbotron {
+            background-color: #efd48f;
+        }
+
+        #contacto p {
+            font-weight: bold;
+        }
+
         #contacto,
         #reserva {
             background-color: #fee6a6;
@@ -239,33 +236,34 @@
         }
 
         #form-contacto {
-            border: 1px solid lightgrey;
+            border: 1px solid #efd48f;
             padding: 4px;
         }
 
-        #form-contacto input {
+        #form-contacto label,
+        input {
             margin: 4px;
+        }
+
+        #form-contacto legend {
+            border-color: #efd48f;
         }
 
         #form-contacto textarea {
             resize: none;
             margin: 4px;
+            width: 80%;
         }
 
         #form-contacto input[type=submit] {
             padding-left: 8px;
             padding-right: 8px;
         }
-        /* Estilos reserva */
 
         #reserva {
             position: relative;
             background-color: #fee6a6;
             width: 100%;
-        }
-        
-        .jumbotron{
-            background-color: #efd48f;           
         }
 
         .form-reserva {
@@ -295,7 +293,7 @@
 
         #reserva input[type=text],
         input[type=date],
-        selects{
+        selects {
             width: 200px;
             padding: 12px 20px;
             margin: 8px 0;
@@ -324,7 +322,8 @@
             cursor: pointer;
         }
 
-        #reserva button:hover {
+        #reserva button:hover,
+        #contacto input[type=submit]:hover {
             background-color: green;
             font-weight: bold;
         }
@@ -335,7 +334,26 @@
             left: 650px;
         }
 
-        @media (max-width: 767px) {
+        @media (min-width: 768px) and (max-width:1024px) {
+            .carousel-inner div:nth-of-type(1) img {
+                content: url("Chāhan.jpg");
+            }
+            .carousel-inner div:nth-of-type(2) img {
+                content: url("Soba.jpg");
+            }
+            .carousel-inner div:nth-of-type(3) img {
+                content: url("Onigiri.jpg");
+            }
+            .carousel-inner div:nth-of-type(4) img {
+                content: url("Mochi.jpg");
+            }
+            .carousel-inner div img {
+                width: 400px;
+                height: 700px;
+            }
+        }
+
+        @media (max-width: 768px) {
             .logo img {
                 max-width: 120px;
             }
@@ -361,11 +379,47 @@
             #reservasotracosa {
                 display: none;
             }
+            .carousel-inner div:nth-of-type(1) img {
+                content: url("Chāhan.jpg");
+            }
+            .carousel-inner div:nth-of-type(2) img {
+                content: url("Soba.jpg");
+            }
+            .carousel-inner div:nth-of-type(3) img {
+                content: url("Onigiri.jpg");
+            }
+            .carousel-inner div:nth-of-type(4) img {
+                content: url("Mochi.jpg");
+            }
+            .carousel-inner div img {
+                width: 400px;
+                height: 700px;
+            }
         }
 
         #myCarousel img {
             min-width: 300px;
+        }
 
+        .delimitador {
+            width: 100%;
+            margin: auto;
+            padding-bottom: 10px;
+        }
+
+        .contenedor {
+            height: 0px;
+            width: 100%;
+            padding-top: 56.25%;
+            position: relative;
+        }
+
+        .contenedor iframe {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
         }
     </style>
     <script type="text/javascript">
@@ -379,7 +433,9 @@
                     url: url,
                     title: title
                 }, title, url);
-
+                console.log("-------------------------------------");
+                console.log(history.state);
+                console.log("-------------------------------------");
                 document.title = title;
                 if ($(this).hasClass("categoria")) {
                     $("#contacto").css("display", "none");
@@ -439,48 +495,27 @@
                 $("#seleccion").css("display", "none");
                 $("footer").css("display", "table");
             });
-            $(document).keydown(function(e) {
-
-                if (e.which == 116 || e.keyCode == 82 && e.ctrlKey) {
-
-                    if (history.state.url == "Reserva.html") {
-                        document.title = history.state.title;
-                        var url = history.state.url
-                        title = history.state.title;
-                        // history.pushState(state, document.title, "Reserva.html");
-                        history.pushState({
-                            url: state.url,
-                            title: state.title
-                        }, title, url);
-
-                        $("#reserva").css("display", "block");
-                        $("#contacto").css("display", "none");
-                        $("#carrusel").css("display", "none");
-                        $("#cuerpo").css("display", "none");
-                        $("#seleccion").css("display", "none");
-                        $("footer").css("display", "table");
-                    } else {}
-                }
-            });
             $(window).on('popstate', function(e) {
-                //obtenemos el valor de state del evento
+                var url;
+                var title;
                 var state = e.originalEvent.state;
 
-                if (state == null || state.url == "Inicio") {
-                    document.title = state.title
-                    $("#home").click();
+                if (state == null) {
+                    $("#contacto").css("display", "none");
+                    $("#carrusel").css("display", "block");
+                    $("#cuerpo").css("display", "none");
+                    $("#seleccion").css("display", "none");
+                    $("#reserva").css("display", "none");
+                    $("footer").css("display", "table");
+                } else if (state.url == "Categorias.html") {
 
+                } else if (state.url == "Arroces.html" || state.url == "Fideos.html" || state.url == "Sushi.html" || state.url == "Wagashi.html") {
+                    document.title = state.title;
+                    url = state.url;
+                    $(".imagen > img").click();
                 } else if (state.url == "Reserva.html") {
-                    // history.back();
-                    document.title = history.state.title;
-                    var url = history.state.url
-                    title = history.state.title;
-
-                    history.pushState({
-                        url: state.url,
-                        title: state.title
-                    }, title, url);
-
+                    document.title = state.title;
+                    url = state.url;
                     $("#reserva").css("display", "block");
                     $("#contacto").css("display", "none");
                     $("#carrusel").css("display", "none");
@@ -488,63 +523,77 @@
                     $("#seleccion").css("display", "none");
                     $("footer").css("display", "table");
                 } else if (state.url == "Contacto.html") {
+                    url = state.url;
                     document.title = state.title
-                    $("#bt-contacto").click();
-                } else {
+                    $("#contacto").css("display", "block");
+                    $("#carrusel").css("display", "none");
+                    $("#cuerpo").css("display", "none");
+                    $("#seleccion").css("display", "none");
+                    $("#reserva").css("display", "none");
+                    $("footer").css("display", "none");
+                } else if (state.url == "proyectoSPA.html") {
+
                     document.title = state.title;
-                    var url = state.url;
-                    $("#home").click();
+                    url = state.url;
+                    $("#contacto").css("display", "none");
+                    $("#carrusel").css("display", "block");
+                    $("#cuerpo").css("display", "none");
+                    $("#seleccion").css("display", "none");
+                    $("#reserva").css("display", "none");
+                    $("footer").css("display", "table");
+
+
                 }
             });
+
+            var formulario = document.forms[1];
+            formulario.addEventListener("submit", function(e) {
+
+                e.preventDefault();
+
+                var err = document.getElementById('errores');
+                var errList = " ";
+                var ret = true;
+
+                var fechaReserva = document.getElementById("fechareserva").value;
+                if (fechaReserva == "") {
+                    errList += "La fecha no es valida <br/>";
+                    ret = false;
+                }
+
+                var numeroPersonas = document.getElementById("cantidadpersonasreserva").value;
+                if (isNaN(numeroPersonas) || numeroPersonas == 0) {
+                    errList += "El número de personas no es valida<br/>";
+                    ret = false;
+                }
+
+                var correoReserva = document.getElementById("correoreserva").value;
+                if (!/^\w+@\w+\.\w+$/.test(correoReserva)) {
+                    errList += "El correo electrónico es invalido<br/>";
+                    ret = false;
+                }
+
+                var nombreReserva = document.getElementById("nombrereserva").value;
+
+                if (nombreReserva == null || nombreReserva == 0) {
+                    errList += "El nombre está vació <br/>";
+                    ret = false;
+                }
+
+                if (ret) {
+                    errList = "La reserva se ha hecho correctamente";
+                    err.style.color = "green";
+                } else {
+                    err.style.color = "red";
+                }
+                err.innerHTML = errList;
+                return ret;
+
+            });
+
         });
     </script>
-    <script type="text/javascript">
-    onload = function(){
-    var formulario = document.forms[1];
 
-    formulario.onsubmit = function(e){
-      e.preventDefault();
-    //Campo donde pondré los errores:
-    var err = document.getElementById('errores');
-    var errList = " ";
-    var ret = true;
-
-    var fechaReserva = document.getElementById("fechareserva").value;
-    if (fechaReserva == ""){
-      errList += "La fecha no es valida <br/>";
-      ret = false;
-    }
-
-    var numeroPersonas = document.getElementById("cantidadpersonasreserva").value;
-    if(isNaN(numeroPersonas) || numeroPersonas == 0) {
-      errList += "El número de personas no es valida<br/>";
-      ret = false;
-    }
-
-    var correoReserva = document.getElementById("correoreserva").value;
-     if ( !/^\w+@\w+\.\w+$/.test(correoReserva) ){
-      errList += "El correo electrónico es invalido<br/>";
-      ret = false;
-    }
-
-    var nombreReserva = document.getElementById("nombrereserva").value;
-
-    if(nombreReserva == null || nombreReserva == 0) {
-      errList += "El nombre está vació <br/>";
-      ret = false;
-    }
-
-    if (ret){
-      errList = "La reserva se ha hecho correctamente";
-      err.style.color="green";
-    }else{
-      err.style.color="red";
-    }
-    err.innerHTML = errList;
-    return ret;
-  }
-}
-    </script>
 </head>
 
 <body>
@@ -555,7 +604,7 @@
                 <a href="proyectoSPA.html"><img src="logo.png" alt="logo"></img>
                 </a>
             </div>
-            <h1>El orondo shogun</h1>
+            <h1>El Orondo Shogun</h1>
         </div>
     </header>
 
@@ -623,11 +672,11 @@
             </div>
 
             <!-- Left and right controls -->
-            <a class="left carousel-control visible-lg visible-md" href="#myCarousel" role="button" data-slide="prev">
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control visible-lg visible-md" href="#myCarousel" role="button" data-slide="next">
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -639,41 +688,43 @@
     </div>
     <article id="seleccion">
         <div class="col-lg-3 col-md-3 "></div>
-        <div class="imagen">
-            <img src="logo.gif" alt="logo" class="invisible-md invisible-sm"></img>
-        </div>
-        <div class="texto">
-
-        </div>
+        <div class="imagen"></div>
+        <div class="texto"></div>
     </article>
-
-
     <div id="contacto">
         <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 jumbotron">Contacto</h2>
-
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <p>Tel: XXX XXX XXX</p>
-            <p>Mail: XXX XXX XXX</p>
+            <p>Teléfono: <a href="tel:+1-303-499-7111">968 495 495</a></p>
+            <p>Correo: <a href="mailto:terrorfex@gmail.com">elorondoshogun@gmail.com</a></p>
             <form id="form-contacto" action="p2.html" method="post">
                 <fieldset>
                     <legend>Queremos saber tu opinión</legend>
                     <label for="nombre">Nombre</label><br>
                     <input type="texto" name="user" id="nombre"><br>
-
-                    <textarea name="coment" rows="8" cols="80" id="comentario"></textarea><br>
+                    <textarea name="coment" rows="8" cols="80"></textarea><br>
                     <input type="submit" value="Enviar">
                 </fieldset>
             </form>
         </div>
         <div class="mapa-contacto col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.428518799482!2d-0.3871991851367746!3d39.45964692121164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f3a1c7c0a8b%3A0x228fed500d6d64ca!2sAv.+de+Giorgeta%2C+24%2C+46007+Val%C3%A8ncia%2C+Valencia!5e0!3m2!1ses!2ses!4v1487610448043"
-                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="delimitador">
+                <div class="contenedor">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.428518799482!2d-0.3871991851367746!3d39.45964692121164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f3a1c7c0a8b%3A0x228fed500d6d64ca!2sAv.+de+Giorgeta%2C+24%2C+46007+Val%C3%A8ncia%2C+Valencia!5e0!3m2!1ses!2ses!4v1487610448043"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="icons">
+            <h3>En redes</h3>
+            <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a href="http://plus.google.com/"><i class="fa fa-google-plus"></i></a>
         </div>
     </div>
     <div id="reserva">
         <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 jumbotron">Reserva</h2>
         <div id="form-reserva col-lg-6 col-md-6 col-sm-12">
-            <form class="form-reserva" action="p2.html" method="post">
+            <form class="form-reserva" onsubmit="event.preventDefault()" method="post">
                 <label for="fecha">Fecha*</label>
                 <input id="fechareserva" type="date" name="fecha" value=""><br>
                 <label for="hora">Hora*</label>
@@ -700,10 +751,10 @@
         <div id="reservasotracosa" class="col-lg-6 col-md-6 col-sm-12 visibility-lg visibility-md">
             <h3>Horarios</h3>
             <br>
-            <h4>Lunes a sábado a mediodía de 13.30 a 16.00h
-            <br>Sábados noche de 20.30 a 23.00h
-            <br>Domingos cerrado, excepto festivos
-          </h4>
+            <p>Lunes a sábado a mediodía de 13.30 a 16.00h
+                <br>Sábados noche de 20.30 a 23.00h
+                <br>Domingos cerrado, excepto festivos
+            </p>
             <img id="fotorestaurante" src="restaurante.jpg" alt="">
         </div>
     </div>
@@ -713,7 +764,9 @@
                 width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="contacto visible-lg visible-md">
-            <p>C/ Falsa, 123</p>
+            <p>Av de Giorgeta, 24</p>
+            <p>49054</p>
+            <p>Valencia</p>
         </div>
         <div class="contacto2 visible-lg visible-md">
             <a class='tel' href="tel:+1-303-499-7111">+1-303-499-7111</a>
@@ -726,9 +779,9 @@
             <a href="http://plus.google.com/"><i class="fa fa-google-plus"></i></a>
         </div>
         <div class="visible-sm visible-xs">
-            <p>C/ Falsa, 123</p>
-            <p>Tel: XXX XXX XXX</p>
-            <p>Mail: X@X.com</p>
+            <p>Av de Giorgeta, 24</p>
+            <p>Tel: 968 495 495</p>
+            <p>Mail: elorondoshogun@gmail.com</p>
         </div>
     </footer>
 </body>
